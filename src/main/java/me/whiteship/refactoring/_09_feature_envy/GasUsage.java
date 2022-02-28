@@ -18,4 +18,9 @@ public class GasUsage {
     public double getPricePerUnit() {
         return pricePerUnit;
     }
+
+    public double getGasBill() {
+        double gasBill = getAmount() *  getPricePerUnit();
+        return gasBill;
+    }
 }
